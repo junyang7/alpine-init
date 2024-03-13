@@ -25,6 +25,7 @@ http://mirrors.ustc.edu.cn/alpine/edge/main
 http://mirrors.ustc.edu.cn/alpine/edge/community
 http://mirrors.ustc.edu.cn/alpine/edge/testing' > /etc/apk/repositories
 apk update
+apk upgrade
 apk add docker git bash vim htop tzdata
 rc-update add docker boot && service docker restart
 git config --global http.sslVerify false
